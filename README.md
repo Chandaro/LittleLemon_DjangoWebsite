@@ -8,6 +8,39 @@ Little Lemon is a Django-based web application for managing a restaurant's menu,
 - **About & Info Pages:** Learn about the restaurant, chefs, and history.
 - **Static Assets:** Includes images, CSS, and icons for a modern look.
 
+
+## Directory Structure (Line Diagram)
+
+```
+Project Root
+│
+├── littlelemon/
+│   ├── settings.py      # Project config
+│   ├── urls.py          # Main routing
+│   ├── wsgi.py/asgi.py  # Deployment
+│
+├── restaurant/
+│   ├── models.py        # Data models
+│   ├── views.py         # Page logic
+│   ├── forms.py         # Form handling
+│   ├── admin.py         # Admin config
+│   ├── urls.py          # App routing
+│   ├── static/
+│   │   ├── css/         # Styles
+│   │   └── img/         # Images
+│   ├── templates/
+│   │   └── ...          # HTML pages
+│   ├── migrations/
+│   │   └── ...          # Migration files
+│
+├── db.sqlite3           # Database
+└── manage.py            # Django CLI
+```
+
+This line diagram provides a quick visual reference for the main folders and files in the project.
+
+---
+
 ## Project Structure
 - `littlelemon/` - Django project configuration (settings, URLs, WSGI/ASGI).
 - `restaurant/` - Main app for restaurant logic (models, views, forms, admin, URLs).
@@ -44,9 +77,6 @@ Little Lemon is a Django-based web application for managing a restaurant's menu,
 - **Static Files:** Add images/CSS in `restaurant/static/`.
 
 ## Admin Access
-- Create a superuser to access the Django admin:
-  ```powershell
-  python manage.py createsuperuser
   ```
 
 ## Additional Notes
@@ -66,3 +96,4 @@ Working on Little Lemon can help you:
 
 ## License
 This project is for educational/demo purposes. Please update the license as needed.
+
